@@ -1,0 +1,228 @@
+----------------------------------INITIAL----------------------------------
+	ROUTER: A
+Destination	Cost	Next Hop
+    A		0  	   A
+    B		1.0  	   B
+    C		5.0  	   C
+    D		inf  	   NA
+    E		inf  	   NA
+
+	ROUTER: B
+Destination	Cost	Next Hop
+    A		1.0  	   A
+    B		0  	   B
+    C		3.0  	   C
+    D		inf  	   NA
+    E		9.0  	   E
+
+	ROUTER: C
+Destination	Cost	Next Hop
+    A		5.0  	   A
+    B		3.0  	   B
+    C		0  	   C
+    D		4.0  	   D
+    E		inf  	   NA
+
+	ROUTER: D
+Destination	Cost	Next Hop
+    A		inf  	   NA
+    B		inf  	   NA
+    C		4.0  	   C
+    D		0  	   D
+    E		2.0  	   E
+
+	ROUTER: E
+Destination	Cost	Next Hop
+    A		inf  	   NA
+    B		9.0  	   B
+    C		inf  	   NA
+    D		2.0  	   D
+    E		0  	   E
+
+
+----------------------------------ITERATION 1----------------------------------
+
+	ROUTER: A
+Destination	Cost	Next Hop
+    A		0  	   A
+    B		1.0  	   B
+ *  C		4.0  	   B
+ *  D		9.0  	   C
+ *  E		10.0  	   B
+
+
+	ROUTER: B
+Destination	Cost	Next Hop
+    A		1.0  	   A
+    B		0  	   B
+    C		3.0  	   C
+ *  D		7.0  	   C
+    E		9.0  	   E
+
+
+	ROUTER: C
+Destination	Cost	Next Hop
+ *  A		4.0  	   B
+    B		3.0  	   B
+    C		0  	   C
+    D		4.0  	   D
+ *  E		6.0  	   D
+
+
+	ROUTER: D
+Destination	Cost	Next Hop
+ *  A		9.0  	   C
+ *  B		7.0  	   C
+    C		4.0  	   C
+    D		0  	   D
+    E		2.0  	   E
+
+
+	ROUTER: E
+Destination	Cost	Next Hop
+ *  A		10.0  	   B
+    B		9.0  	   B
+ *  C		6.0  	   D
+    D		2.0  	   D
+    E		0  	   E
+
+
+----------------------------------ITERATION 2----------------------------------
+
+	ROUTER: A
+Destination	Cost	Next Hop
+    A		0  	   A
+    B		1.0  	   B
+    C		4.0  	   B
+ *  D		8.0  	   B
+    E		10.0  	   B
+
+
+	ROUTER: B
+Destination	Cost	Next Hop
+    A		1.0  	   A
+    B		0  	   B
+    C		3.0  	   C
+    D		7.0  	   C
+    E		9.0  	   E
+
+
+	ROUTER: C
+Destination	Cost	Next Hop
+    A		4.0  	   B
+    B		3.0  	   B
+    C		0  	   C
+    D		4.0  	   D
+    E		6.0  	   D
+
+
+	ROUTER: D
+Destination	Cost	Next Hop
+ *  A		8.0  	   C
+    B		7.0  	   C
+    C		4.0  	   C
+    D		0  	   D
+    E		2.0  	   E
+
+
+	ROUTER: E
+Destination	Cost	Next Hop
+    A		10.0  	   B
+    B		9.0  	   B
+    C		6.0  	   D
+    D		2.0  	   D
+    E		0  	   E
+
+
+----------------------------------ITERATION 3----------------------------------
+
+	ROUTER: A
+Destination	Cost	Next Hop
+    A		0  	   A
+    B		1.0  	   B
+    C		4.0  	   B
+    D		8.0  	   B
+    E		10.0  	   B
+
+
+	ROUTER: B
+Destination	Cost	Next Hop
+    A		1.0  	   A
+    B		0  	   B
+    C		3.0  	   C
+    D		7.0  	   C
+    E		9.0  	   E
+
+
+	ROUTER: C
+Destination	Cost	Next Hop
+    A		4.0  	   B
+    B		3.0  	   B
+    C		0  	   C
+    D		4.0  	   D
+    E		6.0  	   D
+
+
+	ROUTER: D
+Destination	Cost	Next Hop
+    A		8.0  	   C
+    B		7.0  	   C
+    C		4.0  	   C
+    D		0  	   D
+    E		2.0  	   E
+
+
+	ROUTER: E
+Destination	Cost	Next Hop
+    A		10.0  	   B
+    B		9.0  	   B
+    C		6.0  	   D
+    D		2.0  	   D
+    E		0  	   E
+
+
+----------------------------------ITERATION 4----------------------------------
+
+	ROUTER: A
+Destination	Cost	Next Hop
+    A		0  	   A
+    B		1.0  	   B
+    C		4.0  	   B
+    D		8.0  	   B
+    E		10.0  	   B
+
+
+	ROUTER: B
+Destination	Cost	Next Hop
+    A		1.0  	   A
+    B		0  	   B
+    C		3.0  	   C
+    D		7.0  	   C
+    E		9.0  	   E
+
+
+	ROUTER: C
+Destination	Cost	Next Hop
+    A		4.0  	   B
+    B		3.0  	   B
+    C		0  	   C
+    D		4.0  	   D
+    E		6.0  	   D
+
+
+	ROUTER: D
+Destination	Cost	Next Hop
+    A		8.0  	   C
+    B		7.0  	   C
+    C		4.0  	   C
+    D		0  	   D
+    E		2.0  	   E
+
+
+	ROUTER: E
+Destination	Cost	Next Hop
+    A		10.0  	   B
+    B		9.0  	   B
+    C		6.0  	   D
+    D		2.0  	   D
+    E		0  	   E
